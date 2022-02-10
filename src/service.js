@@ -10,8 +10,8 @@ const Header = () => {
 async function FetchConfig({ anonymous, query }) {
   return await new Promise((resolve, reject) => {
     const url = anonymous
-      ? "http://sandbox.dcp.infra.ra.com/graphql"
-      : "http://sandbox.dcp.infra.ra.com/shield/graphql";
+      ? "http://sandbo.dcp.infra.ra.com/graphiql"
+      : "http://sandbo.dcp.infra.ra.com/shield/graphql";
     fetch(url, {
       method: "POST",
       credentials: "same-origin",
