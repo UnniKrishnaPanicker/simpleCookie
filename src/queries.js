@@ -4,7 +4,7 @@ export const GetTokenQuery = () => {
     anonymous: true,
     query: `mutation authenticateWithRealm {
         authenticateWithRealm(
-            input: {username: "test-benjamin.lucas@express-scripts.com", passwords: "benjamin123", realm:"Express_Scripts"}
+            input: {username: "test-oliver.william@express-scripts.com", passwords: "oliver123", realm:"Express_Scripts"}
           ) {
             clientMutationId
             string
@@ -27,7 +27,7 @@ export const GetUserInfoQuery = () => {
   return FetchConfig({
     anonymous: false,
     query: `query MyQuery {
-        getUserDetails(condition: {userName: "test-benjamin.lucas@express-scripts.com"}) {
+        getUserDetails(condition: {userName: "test-oliver.william@express-scripts.com"}) {
             nodes {
               openprojectUserId
               userName
