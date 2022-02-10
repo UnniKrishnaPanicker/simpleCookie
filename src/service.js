@@ -14,8 +14,8 @@ async function FetchConfig({ anonymous, query }) {
       : "http://sandbo.dcp.infra.ra.com/shield/graphql";
     fetch(url, {
       method: "POST",
-      credentials: "same-origin",
-      withCredentials: "true",
+      credentials: "include",
+     // withCredentials: "true",
       headers: Header(),
       body: JSON.stringify({
         query,
