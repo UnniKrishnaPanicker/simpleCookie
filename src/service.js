@@ -3,15 +3,15 @@ const Header = () => {
     "Content-Type": "application/json",
     Accept: "application/json",
     "auth-cookie": "1",
-    realm: String(localStorage.getItem("realm")),
+    realm: "Express_Scripts",
   };
 };
 
 async function FetchConfig({ anonymous, query }) {
   return await new Promise((resolve, reject) => {
     const url = anonymous
-      ? "http://sandbo.dcp.infra.ra.com/graphiql"
-      : "http://sandbo.dcp.infra.ra.com/shield/graphql";
+      ? "http://sandbox.dcp.infra.ra.com/graphql"
+      : "http://sandbox.dcp.infra.ra.com/shield/graphql";
     fetch(url, {
       method: "POST",
       credentials: "same-origin",
