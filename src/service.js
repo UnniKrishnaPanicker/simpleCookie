@@ -16,7 +16,7 @@ async function FetchConfig({ anonymous, query }) {
       method: "POST",
       credentials: "same-origin",
      // credentials: "include",
-     // withCredentials: "true",
+     withCredentials: "true",
       headers: Header(),
       body: JSON.stringify({
         query,
